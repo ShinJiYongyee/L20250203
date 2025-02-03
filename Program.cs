@@ -7,16 +7,17 @@ namespace L20250203
     {
         static void Main(string[] args)
         {
-            int[] data = new int[10];
-
-            for (int i = 0; i < data.Length; i++) 
-            { 
-                data[i] = i+1;
-            }
-            for (int i = 0;i < data.Length; i++)
+            int x = 10;
+            int y = 10;
+            int[,] data = new int[y,x];
+            for (int i = 0; i < data.GetLength(0); i++)
             {
-                Console.WriteLine(data[i]);
+                for (int j = 0; j < data.GetLength(1); j++)
+                {
+                    data[i, j] = (j+1)+(i)*10;
+                }
             }
+            Console.WriteLine("hello");
         }
     }
 }
