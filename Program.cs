@@ -11,7 +11,11 @@ namespace L20250203
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
+            //*****
+            for (int i = 0; i < 5; i++) 
+            {
+                Console.Write('*');
+            }
         }
     }
 }
