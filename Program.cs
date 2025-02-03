@@ -6,11 +6,19 @@ namespace L20250203
     {
         static void Main(string[] args)
         {
-            int size = 10;
+            //    *
+            //   **
+            //  ***
+            // ****
+            //*****
 
-            for (int j = 0; j < size; j++)
+            for (int j = 1; j <= 5; j++)
             {
-                for (int i = 0; i < (j+1); i++)
+                for (int i = 0; i < 5-j; i++)
+                {
+                    Console.Write(' ');
+                }
+                for (int i = 0; i < j; i++)
                 {
                     Console.Write('*');
                 }
