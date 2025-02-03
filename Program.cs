@@ -26,10 +26,15 @@ namespace L20250203
                 Console.WriteLine();
             }
         }
+        static string Plus3(string number)
+        {
+            return number + 3;
+        }
         static void Main(string[] args)
         {
-            Initialize();
-            Print();
+            //Initialize();
+            //Print();
+            Console.WriteLine(Plus3("sex"));
         }
     }
 }
