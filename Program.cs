@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-
 namespace L20250203
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int[,] data = new int[10, 10];
+        static void Initialize()
         {
-            int x = 10;
-            int y = 10;
-            int[,] data = new int[y,x];
             for (int i = 0; i < data.GetLength(0); i++)
             {
                 for (int j = 0; j < data.GetLength(1); j++)
@@ -17,6 +14,9 @@ namespace L20250203
                     data[i, j] = (j+1)+(i)*10;
                 }
             }
+        }
+        static void Print()
+        {
             for (int i = 0; i < data.GetLength(0); i++)
             {
                 for (int j = 0; j < data.GetLength(1); j++)
@@ -25,6 +25,11 @@ namespace L20250203
                 }
                 Console.WriteLine();
             }
+        }
+        static void Main(string[] args)
+        {
+            Initialize();
+            Print();
         }
     }
 }
