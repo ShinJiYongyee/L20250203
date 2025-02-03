@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace L20250203
 {
@@ -6,25 +7,16 @@ namespace L20250203
     {
         static void Main(string[] args)
         {
-            //    *
-            //   **
-            //  ***
-            // ****
-            //*****
+            int[] data = new int[10];
 
-            for (int j = 1; j <= 5; j++)
-            {
-                for (int i = 0; i < 5-j; i++)
-                {
-                    Console.Write(' ');
-                }
-                for (int i = 0; i < j; i++)
-                {
-                    Console.Write('*');
-                }
-                Console.WriteLine();
+            for (int i = 0; i < data.Length; i++) 
+            { 
+                data[i] = i+1;
             }
-            
+            for (int i = 0;i < data.Length; i++)
+            {
+                Console.WriteLine(data[i]);
+            }
         }
     }
 }
