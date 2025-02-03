@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace L20250203
 {
@@ -12,10 +7,15 @@ namespace L20250203
         static void Main(string[] args)
         {
             //*****
-            for (int i = 0; i < 5; i++) 
+            for(int i=0; i<5; i++)
             {
-                Console.Write('*');
+                for (int j = 0; j < 5; j++) 
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
             }
+
         }
     }
 }
