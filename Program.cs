@@ -16,9 +16,13 @@ namespace L20250203
         {
             return (number1 * number2);
         }
+        static float Multiply(float number1, float number2)
+        {
+            return (number1 * number2);
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine(Multiply(3,4));
+            Console.WriteLine(Multiply(1.3f,4));
         }
     }
 }
