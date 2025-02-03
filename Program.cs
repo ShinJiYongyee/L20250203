@@ -2,39 +2,20 @@
 using System.Diagnostics;
 namespace L20250203
 {
+    public class Player
+    {
+        public static string Eat(string number)
+        {
+            return number + "을/를 먹다";
+        }
+    }
     internal class Program
     {
-        static int[,] data = new int[10, 10];
-        static void Initialize()
-        {
-            for (int i = 0; i < data.GetLength(0); i++)
-            {
-                for (int j = 0; j < data.GetLength(1); j++)
-                {
-                    data[i, j] = (j+1)+(i)*10;
-                }
-            }
-        }
-        static void Print()
-        {
-            for (int i = 0; i < data.GetLength(0); i++)
-            {
-                for (int j = 0; j < data.GetLength(1); j++)
-                {
-                    Console.Write(data[j, i] + "\t ");
-                }
-                Console.WriteLine();
-            }
-        }
-        static string Plus3(string number)
-        {
-            return number + 3;
-        }
         static void Main(string[] args)
         {
             //Initialize();
             //Print();
-            Console.WriteLine(Plus3("sex"));
+            Console.WriteLine(Player.Eat("sex"));
         }
     }
 }
